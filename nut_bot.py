@@ -21,6 +21,9 @@ while True:
                 txt = msg.text.removesuffix(" has left the group.")
                 if txt not in nut_names:
                     nut_names.append(txt)
+                    with open("nut_names.json", "w") as f:
+                        f.write(json.dumps(nut_names))
+                        f.close()
                     with open ('krabs.png', 'rb') as f:
                         m.caption_image(f,"", txt+" HAS NUTTED")
                     with open ('output.png', 'rb') as f:
