@@ -33,7 +33,7 @@ with open("nut_names.json", 'r') as f:
 while True:
     try:
         logger.debug("Starting new client")
-        client=Client.from_token("1hLpOWTPR2S6rADtCPFanKvdv20FblNOixHN0Yva") #auth token
+        client=Client.from_token("") #auth token
         for group in client.groups.list(): #for each group in list of groups aka group chats
             if group.name=="No Nut November": break
         logger.debug("Fetching messages")
