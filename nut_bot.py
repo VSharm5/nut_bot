@@ -4,7 +4,7 @@ import time
 import pdb
 import json
 txt = ""
-client=Client.from_token("1hLpOWTPR2S6rADtCPFanKvdv20FblNOixHN0Yva") #auth token
+client=Client.from_token("") #auth token
 for group in client.groups.list(): #for each group in list of groups aka group chats
     if group.name=="No Nut November": break
 nut_names = []
